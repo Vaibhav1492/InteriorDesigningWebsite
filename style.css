@@ -8,11 +8,20 @@ body,html{
     font-family: sans-serif;
 }
 
+.my_nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
 .Section_top{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     background-image: url(images/img8.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -20,34 +29,43 @@ body,html{
     text-align: center;
     justify-content: center;
     animation: change 10s infinite ease-in-out backwards;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* animation-fill-mode: ; */
     /* animation-name: ease-in-out; */
     /* animation-duration: 10s; */
     /* animation-iteration-count: infinite;  */
     /* animation-duration: calc(); */
 }
+.cc{
+    height: 20px;
+}
 .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-transform: uppercase;
 
 }
 .content h1{
-    color: #fff;
+    color: black;
     font-size: 60px;
     letter-spacing: 15px;
 }
 .content h1 span{
-    color: #111;
+    color: #000000;
+    /* color: #069a8e; */
 }
 .content a{
-    background: #85c1ee;
+    /* background: #85c1ee; */
+    position: relative;
+    top: 1rem;
+    background: #178fff;
     padding: 10px 24px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 20px;
+    margin-top: 200px;
+    color: white;
 }
 .content a:hover{
     background: #034e88;
@@ -80,37 +98,6 @@ body,html{
         background-image: url(images/img7.avif);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .first li{
@@ -334,10 +321,8 @@ ul{
 .footer{
     background-color:#24262b;
     padding: 70px 0;
-}
-.row{
-    display:flex;
-    flex-wrap:wrap;
+    display: flex; 
+    padding-left: 8rem;
 }
 .footer-col{
     width: 25%;
@@ -413,3 +398,40 @@ ul{
 }
 
 /* footer section ends */
+.footer-col ul{
+    padding: 0;
+}
+
+.ddm{
+    z-index: 20;
+}
+
+.card img{
+    height: 14rem;
+}
+
+.card{
+    transition: all 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    /* transform: t; */
+}
+
+
+
+.cardBox{
+    height: 18rem;
+    width: 7rem;
+    background-color: #111;
+}
+
+.cardImg{
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+    object-fit: contain;
+    /* background-position: center; */
+    /* background-position: ; */
+}
