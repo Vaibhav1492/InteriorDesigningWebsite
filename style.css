@@ -72,6 +72,19 @@ body,html{
     /* color: #fff; */
 
 }
+.movingtext{
+    padding: 50px;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes movingtext{
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 @keyframes change{
     0%
     {
@@ -91,7 +104,7 @@ body,html{
     }
     80%
     {
-        background-image: url(images/img6.webp);
+        background-image: url(https://jdinstituteoffashiontechnology.com/wp-content/uploads/2021/08/interior-designer-career.jpeg);
     }
     100%
     {
@@ -320,12 +333,12 @@ ul{
 }
 .footer{
     background-color:#24262b;
-    padding: 70px 0;
+    padding: 100px 0;
     display: flex; 
     padding-left: 8rem;
 }
 .footer-col{
-    width: 25%;
+    width: 100%;
     padding: 0 15px;
 }
 .footer-col h4{
@@ -434,4 +447,14 @@ ul{
     object-fit: contain;
     /* background-position: center; */
     /* background-position: ; */
+}
+.h3{
+    color:red;
+}
+.belowfooter{
+    background-color:#24262b;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
 }
